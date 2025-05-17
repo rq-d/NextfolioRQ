@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind linearGradient;
 
 ::selection {
   background-color: #47a3f3;
@@ -23,6 +24,7 @@
 /* Dark theme colors */
 .dark {
   background-color: #111010;
+  background-image: linear-gradient( black , #0fa29646);
   --sh-class: #4c97f8;
   --sh-identifier: white;
   --sh-sign: #8996a3;
