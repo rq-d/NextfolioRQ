@@ -6,7 +6,7 @@ export default function Page() {
     <section>
       <a href={socialLinks.twitter} target="_blank">
         <Image
-          src="/profile.png"
+          src="/IMG_9623.jpeg"
           alt="Profile photo"
           className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
           unoptimized
@@ -18,16 +18,17 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-medium">Raul Quintana</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Hello! I'm a versatile and data-driven engineer with a strong
-          foundation in Python, SQL, and geospatial data analysis, complemented
-          by hands-on experience in autonomous systems, machine learning, and
-          advanced simulation environments. Demonstrates proven success leading
-          multi-agent autonomy projects, developing real-time simulation models,
-          and designing intelligent algorithms for aerial and maritime systems.
-          Adept at translating complex datasets into actionable insights and
-          deploying scalable, containerized solutions. Known for strong
-          communication skills, self-motivation, and the ability to excel in
-          both collaborative and remote work settings.
+          I am an engineer with a strong foundation in mechanical systems and
+          deep experience in autonomy, AI/ML, and robotics. My work spans across
+          advanced flight simulations, autonomous vehicle integration,
+          multi-agent coordination, and real-time system deployment—most
+          recently at Lockheed Martin. I’ve contributed to mission-critical
+          defense simulations, developed autonomy planning services, built CI/CD
+          pipelines from the ground up, and created intelligent algorithms for
+          aircraft guidance and threat response. My portfolio reflects a blend
+          of software engineering, control systems, and machine learning
+          projects—Each project highlights my commitment to solving complex
+          problems with robust, scalable solutions.
         </p>
         {/* <p>
           Nextfolio has everything you need for a portfolio: MDX blog, SEO, RSS,

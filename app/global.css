@@ -23,7 +23,7 @@
 
 /* Dark theme colors */
 .dark {
-  background-color: #111010;
+  /* background-color: #111010; */
   background-image: linear-gradient( black , #0fa29646);
   --sh-class: #4c97f8;
   --sh-identifier: white;
