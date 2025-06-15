@@ -43,12 +43,11 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
               </a>
             ) : (
               <Image
-                alt={image.alt}
                 src={image.src}
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                priority
-                className="rounded-lg object-cover"
+                alt={image.alt}
+                width={500}
+                height={300}
+                style={{ objectFit: "contain", width: "100%", height: "100%" }}
               />
             )}
           </div>
