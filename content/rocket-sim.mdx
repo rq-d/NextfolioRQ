@@ -1,12 +1,20 @@
 ---
-title: "Missile Sim"
+title: "RocketSim - Simulating a 6DOF Guided Rocket"
 publishedAt: "2025-06-15"
 summary: "Instructions to build and configure your Nextfolio portfolio."
 tags: "Configuration, Web development"
 ---
 
-### Development Path
+This project originated from a job interview where I was asked to design a rocket and simulate it's max hypothetical range. The writeup that proceeds outlines the general approach I took to solving the problem and simulating the rocket in the [Elodin](https://www.elodin.systems) environment. The [repository can be found here](https://github.com/rq-d/MissileSim/tree/prompt): 
 
+<ImageGrid
+  columns={1}
+  rows={1}
+  images={[
+    { src: "/photos/missile.PNG", alt: "Photo2" },
+  ]}
+/>
+### Development Path
 Objective: Explore max range of a hypothetical rocket
 
 Gather as much concrete data as possible, make assumptions for the rest. Simulate it using Elodin and test it in different conditions to find a hypothetical max range and identify contributing variables.
@@ -18,10 +26,9 @@ Now we have enough information to calculate the total mass, moments of inertia, 
 For simplicity, I decided to use the aerodynamic forces and moments from the smaller rocket in the Elodin template examples. I also used the vertical PID acceleration control from that simulation, along with a guidance model I had developed while preparing for this exercise.
 
 The thrust profile from AeroTech sits in `models/data/AeroTech_M685.txt` and is parsed in `rocket.py`
-
 Now it's time to write code. I began with a proposed directory structure to improve readability, breaking the simulation into separate files and folders. The goal is to have a top-level `main.py` that simply calls `sim.py`. The `sim.py` file creates the world, spawns entities, and selects which models to use. Models are stored in the models folder, and eventually, each model will reside in its own file.
 
-Similarly, each entity—such as the rocket or target—will have its own file (e.g., `rocket.py`, `target.py`) containing definitions specific to that entity. I also created a `utils` folder to store commonly used functions like coordinate transformations, math operations, and parsing tools. For now, it contains just a few transformation functions. Admittedly, I did not completely follow this design pattern due to time constraints but I believe it would improve modularity, and readability.
+Similarly, each entity—such as the rocket or target—will have its own file (e.g., `rocket.py `, `target.py`) containing definitions specific to that entity. I also created a `utils` folder to store commonly used functions like coordinate transformations, math operations, and parsing tools. For now, it contains just a few transformation functions. Admittedly, I did not completely follow this design pattern due to time constraints but I believe it would improve modularity, and readability.
 
 ```
 MissileSim/prompt
