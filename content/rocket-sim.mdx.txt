@@ -7,12 +7,13 @@ tags: "Configuration, Web development"
 
 This project originated from a job interview where I was asked to design a rocket and simulate it's max hypothetical range. The writeup that proceeds outlines the general approach I took to solving the problem and simulating the rocket in the [Elodin](https://www.elodin.systems) environment. The [repository can be found here](https://github.com/rq-d/MissileSim/tree/prompt): 
 
-<ImageGrid
-  columns={1}
-  rows={1}
-  images={[
-    { src: "/photos/missile.PNG", alt: "Photo2" },
-  ]}
+<Image
+  src="/photos/missile.png"
+  alt="My photo"
+  width={600}
+  height={400}
+  className="rounded-md"
+  style={{ objectFit: "contain" }}
 />
 ### Development Path
 Objective: Explore max range of a hypothetical rocket
@@ -108,11 +109,14 @@ Lastly, I wrote a top-level script called monte.py that takes random samples of 
 - Had difficulty getting the target state into the pronav model(component). I believe the 3-body example is doing this by using a fold function but I dont understand how entirely. The ball example only has one physical entity (the ball itself) so i couldnt find the pattern im looking for there. I decided to move on since the focus of this prompt is to explore the range of an unguided rocket, thus I put a static target position in the model as a temporary hack. Guidance would be a fun feature to have so i left a working rocket with pronav applied to the vertical PID controller in examples/rocket/sim.py as well, run it with elodin editor examples/rocket/main.py if curious
 
 # Run Data --- 50 MC
-<ImageGrid
-  columns={1}
-  images={[
-    { src: "/photos/figure_1.png", alt: "Photo2" },    
-  ]}
+
+<Image
+  src="/photos/figure_1.png"
+  alt="My photo"
+  width={600}
+  height={400}
+  className="rounded-md"
+  style={{ objectFit: "contain" }}
 />
 
 <ImageGrid
