@@ -83,3 +83,12 @@ leaves microscopic gaps that allow water to seep in—something I discovered the
 
 <YouTube videoId="-HtTZu-K4v4" />
 ### Sea Trials
+
+### Autonomy
+ 
+While waiting for parts to print and dry, it seemed like the logical time to start working on the autonomy. Phase 1 goal is to set the project up in ROS2 + Gazebo + PX4/Ardupilot + my Autonomy. We'll be sending offboard commands from my autonomy to PX4. Ideally this will be completely implemented in containers to avoid any local install magic on my machine. Since I would like to amke this a swarm of boats at some point, it makes sense to model each node on its own container. We'll see how that goes.
+
+Phase 2 will include obstacle avoidance with an onboard camera, just to simply route around objects dected while getting from one waypoint to another.
+
+Working repo:
+https://github.com/rq-d/Oshin
